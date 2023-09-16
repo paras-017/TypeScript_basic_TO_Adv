@@ -13,3 +13,4 @@ const paras:Student = {
 }
 
 console.log(paras.greet('India'))
+export{}
