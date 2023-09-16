@@ -8,3 +8,7 @@ var displayPersonInfo = function (person) {
     return "".concat(fname, " ").concat(lname, " you age is ").concat(age, " and driving license is ").concat(isLicence ? "availble for you" : "not available yer");
 };
 console.log(displayPersonInfo(person1));
+// Readonly
+var person2 = ['Hello', 'world', 18, true];
+person2.push('coding');
+console.log(person2);
