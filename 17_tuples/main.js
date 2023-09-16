@@ -5,6 +5,6 @@ var displayPersonInfo = function (person) {
     // return `${person[0]} ${person[1]} you age ${person[2]} and software show your driving licence is ${person[3]}`
     // OR you can do like this
     var fname = person[0], lname = person[1], age = person[2], isLicence = person[3];
-    return "".concat(fname, " ").concat(lname, " you age is ").concat(age, " and driving license is ").concat(isLicence);
+    return "".concat(fname, " ").concat(lname, " you age is ").concat(age, " and driving license is ").concat(isLicence ? "availble for you" : "not available yer");
 };
 console.log(displayPersonInfo(person1));

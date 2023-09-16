@@ -10,6 +10,6 @@ const displayPersonInfo:(person:Person)=>string = (person:Person)=>{
     // return `${person[0]} ${person[1]} you age ${person[2]} and software show your driving licence is ${person[3]}`
     // OR you can do like this
     const [fname, lname,age, isLicence] = person
-    return `${fname} ${lname} you age is ${age} and driving license is ${isLicence}`
+    return `${fname} ${lname} you age is ${age} and driving license is ${isLicence?`availble for you`:`not available yer`}`
 }
 console.log(displayPersonInfo(person1))
