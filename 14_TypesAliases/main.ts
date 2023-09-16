@@ -6,7 +6,7 @@ type Person= {
   isFresher:boolean;
   package:number;
   city:string;
-  experience?:number; //optional Property
+  experience?:number; //optional Property and we can't use deafult in object it's only allowrd in function parameters
   stack:string[]
 }
 const fresher:Person={
