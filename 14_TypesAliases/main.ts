@@ -17,3 +17,21 @@ const fresher:Person={
     city:"Muzaffarnagar",
     stack:["Javascript", "Typescript", "Python", "Full Stack Developer"]
 }
+
+
+// Function with type aliases
+type Product = {
+    name:string,
+    price:number,
+    quantity:number
+}
+const product:Product = {
+    name:"laptop",
+    price: 54999,
+    quantity:18
+}
+
+const totalPrice = (product:Product)=>{
+     return `total price Rs.${product.price*product.quantity}`
+}
+console.log(totalPrice(product))
