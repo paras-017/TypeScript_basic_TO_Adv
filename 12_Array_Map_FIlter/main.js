@@ -10,4 +10,7 @@ console.log(myArray1);
 console.log(myArray2);
 console.log(numToStr);
 var evenList = myArray1.filter(function (elem) { return elem % 2 === 0; });
+var names = ["Paras", "singh", "Chauhan", "Anna", "Alice", "America", 'bob'];
+var bigName = names.filter(function (elem) { return elem.length > 4; });
 console.log(evenList);
+console.log(bigName);

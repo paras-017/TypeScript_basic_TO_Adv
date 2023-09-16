@@ -13,5 +13,10 @@ console.log(numToStr)
 
 
 const evenList = myArray1.filter((elem)=>elem%2===0)
+const names = ["Paras","singh", "Chauhan", "Anna", "Alice", "America",'bob']
+const bigName = names.filter(elem=>elem.length>4)
 console.log(evenList)
+console.log(bigName)
+
+
 export{}
