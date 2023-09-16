@@ -15,7 +15,11 @@ for (const i in fruits) {
     console.log(i)
 }
 
-// Loops    2nd for..of   (gives value)
+// Loops    3rd for..of   (gives value)
 for (const i of fruits) {
     console.log(i)
 }
+
+
+// Loops    4rth forEach
+fruits.forEach((curVal)=> console.log(curVal))
