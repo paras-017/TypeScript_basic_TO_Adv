@@ -21,5 +21,4 @@ const inputValue=<T>(value:T):T=>{
 console.log(inputValue(56))
 console.log(inputValue<string>('paras'))       //hover on inputValue to see how this work
 console.log(inputValue(false))
-
 export{}
