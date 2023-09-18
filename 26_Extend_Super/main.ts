@@ -27,3 +27,5 @@ const person1 = new Person("Paras", 18, ['Freelancing'])
 const student1 = new Student("Paras", 18, ['Freelancing'],12)
 console.log(person1.introduce())
 console.log(student1.introduce())
+
+export{}
