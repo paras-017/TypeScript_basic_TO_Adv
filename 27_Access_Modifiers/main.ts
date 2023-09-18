@@ -18,8 +18,8 @@ class Student extends Person{
      this.grade=grade
     }
     introduceGrade():string{
-        // return `${super.introduce()}, my grade is ${this.grade} `
-        return `${this.gender}`          //its private it can only use as super.introduct or it can be used in Person only 
+        return `${super.introduce()}, my grade is ${this.grade} `
+        // return `${this.gender}`          //its private it can only use as super.introduct or it can be used in Person only 
     }
 }
 const person_David = new Person('David',22,'male')
@@ -27,7 +27,7 @@ const student_David = new Student('David',22,12,'male')
 // console.log(person_David.age)      //age is protected
 // console.log(person_David.gender)  //gneder is private
 // console.log(person_David)      
-console.log(student_David.gender)
+// console.log(student_David.gender)  
 
 
 
@@ -36,3 +36,4 @@ Default beahvior is Public
 protected: You can use keys in method but individual its not allowed
 private
 */
+export{}
