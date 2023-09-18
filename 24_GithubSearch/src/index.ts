@@ -13,8 +13,25 @@ interface UserData {
     url:string
 }
 
+async function myCustomFetcher<T>(url:string,options?:RequestInit):Promise<T>{
+    const response = await fetch(url, options)
+    if(!response.ok){
+        throw new Error(`Network response was not Okay- status: ${response.status}` )
+    }
+    const data = await response.json()
+    console.log(data)
+    return data
+}
+
+
+
 function fetchUrlData(url:string){
-    // myCustomFetcher(url,{})
+    myCustomFetcher<UserData[]>(url,{}).then((userInfo)=>{
+        for(const singleUser of userInfo){
+            // showResultUI(singleUser)
+        //    showResultUI(singleUser)
+        }
+    })
 }
 
 // default function call
