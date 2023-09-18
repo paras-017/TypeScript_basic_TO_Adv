@@ -7,3 +7,6 @@ class Person{
 }
 const john = new Person('John', 28)
 console.log(john)
+
+
+export{}
