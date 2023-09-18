@@ -1,7 +1,7 @@
 const getUsername = document.querySelector('#user') as HTMLInputElement
 const formSubmit = document.querySelector('#form') as HTMLFormElement             //type defining way 1
 // const formSubmit:HTMLFormElement|null= document.querySelector('#form')         //type defining way 2
-const main_container = document.querySelector('.main-container') as HTMLElement
+const main_container = document.querySelector('.main_container') as HTMLElement
 
 // lets create a interface of an user-data object
 
@@ -23,13 +23,27 @@ async function myCustomFetcher<T>(url:string,options?:RequestInit):Promise<T>{
     return data
 }
 
+const showResultUI = (singleUser:UserData) => {
+    const {avatar_url, url, location, login} = singleUser
+  main_container.insertAdjacentHTML(
+    "beforeend",`
+    <div class='card'>
+      <img src=${avatar_url} alt=${login}/>
+      <hr/>
+      <div class="card-footer">
+        <img src=${avatar_url} alt=${login}>
+        <a href=${url}>Github</a>
+      </div>
+    </div>`
+  )
+}
 
 
 function fetchUrlData(url:string){
     myCustomFetcher<UserData[]>(url,{}).then((userInfo)=>{
         for(const singleUser of userInfo){
             // showResultUI(singleUser)
-        //    showResultUI(singleUser)
+           showResultUI(singleUser)
         }
     })
 }
