@@ -40,5 +40,10 @@ var person_David = new Person('David', 22, 'male');
 var student_David = new Student('David', 22, 12, 'male');
 // console.log(person_David.age)      //age is protected
 // console.log(person_David.gender)  //gneder is private
-console.log(person_David);
-// console.log(student_David.introduceGrade())
+// console.log(person_David)      
+console.log(student_David.introduceGrade());
+/*
+Default beahvior is Public
+protected: You can use keys in method but individual its not allowed
+private
+*/ 
