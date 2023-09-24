@@ -39,3 +39,17 @@ const stringStack = new Stack<string>();
 stringStack.push("hello");
 stringStack.push("world");
 const poppedString = stringStack.pop(); // poppedString is of type string
+
+
+// In this example, T is a type parameter that allows you to create stacks of different data types.
+
+// Using Constraints:
+
+// You can add constraints to type parameters to restrict the types that can be used. For example, you can require that T extends a specific interface or is a subclass of a certain class.
+interface Printable {
+    print(): void;
+}
+
+function printItem<T extends Printable>(item: T): void {
+    item.print();
+}
