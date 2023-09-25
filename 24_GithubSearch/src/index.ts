@@ -3,6 +3,7 @@ const formSubmit = document.querySelector('#form') as HTMLFormElement           
 // const formSubmit:HTMLFormElement|null= document.querySelector('#form')         //type defining way 2
 const main_container = document.querySelector('.main_container') as HTMLElement
 
+
 // lets create a interface of an user-data object
 
 interface UserData {
