@@ -4,6 +4,7 @@ function sumoftwo(a:number, b:number):number{
 }
 // console.log(sumoftwo(5,'10'))              //when you run 'tsc --noEmitOnError main.ts ' to compile this file it will stop you because there is typeError in this file
 
+
 console.log(sumoftwo(5,10))
 
 export{}
